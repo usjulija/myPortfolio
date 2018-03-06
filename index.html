@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS styles -->
+  <link href="stile.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="https://image.ibb.co/cewncn/small_logo.png" type="image/png" sizes="16x16">
+  <title>Julia Us Portfolio</title>
+</head>
+<body>
+  <!-- Responsive navigation menu that is visible on screen 449px and less -->
+  <!-- hidden part of the menu -->
+  <nav id="myTopNavigation" class="topNavigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- hamburger bar -->
+  <a href="javascript:void(0);" id="hamburgerIcon" class="hamburger pointer" onclick="myNavFunction()">
+    <div id="line1" class="line-1"></div>
+    <div id="line2" class="line-2"></div>
+    <div id="line3" class="line-3"></div>
+  </a>
+
+  <!-- navigation menu that is visible on screens of 450px and larger -->
+  <nav class="visible-navigation-450">
+    <a href="#home">
+      <span>Home</span>
+      <img src="images/small/004-home.svg" alt="Home Icon">
+    </a>
+    <a href="#about">
+      <span>About</span>
+      <img src="images/small/001-user.svg" alt="About Icon">
+    </a>
+    <a href="#portfolio">
+      <span>Portfolio</span>
+      <img src="images/small/002-mouse.svg" alt="Portfolio Icon">
+    </a>
+    <a href="#contact">
+      <span>Contact</span>
+      <img src="images/small/003-order.svg" alt="Contact Icon">
+    </a>
+  </nav>
+
+  <main class="col-100">
+    <!-- Home section -->
+    <section id="home" class="home col-100">
+      <div class="home-heading padding center">
+        <h1 class="pacifico">Julia Us</h1>
+        <h3>web-developer</h3>
+        <a href="https://github.com/usjulija" target="_blank">
+          <img src="images/small/002-github-draw-logo.svg" alt="gitHub logo">
+        </a>
+        <a href="https://codepen.io/dashboard/" target="_blank">
+          <img src="images/small/003-codepen-draw-logo.svg" alt="codepen logo">
+        </a>
+        <a href="https://www.linkedin.com/in/julijaus/" target="_blank">
+          <img src="images/small/001-linkedin-draw-logo.svg" alt="linkedin logo">
+        </a>
+      </div>
+    </section>
+    <!-- Gradient background till footer -->
+    <div class="gradient">
+      <!-- About section -->
+      <section id="about" class="about col-100">
+        <!-- Section with 4 qualieties -->
+        <div class="services-container">
+          <div class="padding col-25">
+            <img src="images/small/003-devices.svg" alt="Devices icon">
+            <h3 class="playfair padding-small">Responsive</h3>
+            <p>Web-pages that look beautiful on every device.</p>
+          </div>
+          <div class="padding col-25">
+            <img src="images/small/004-creativity.svg" alt="Pensil icon">
+            <h3 class="playfair padding-small">Elegant</h3>
+            <p>Subtile design decisions that make the web-page stand out.</p>
+          </div>
+          <div class="padding col-25">
+            <img src="images/small/001-jigsaws.svg" alt="Puzzle icon">
+            <h3 class="playfair padding-small">Intuitive</h3>
+            <p>Web-pages that are user-friendly and easy to navigate.</p>
+          </div>
+          <div class="padding col-25">
+            <img src="images/small/002-idea.svg" alt="Idea icon">
+            <h3 class="playfair padding-small">Creative</h3>
+            <p>Artistic design to reveal beauty of every idea.</p>
+          </div>
+        </div>
+        <!-- Section with photo and information -->
+        <section class="about-container">
+          <div class="about-container_visuals">
+            <div class="my-photo">
+              <img src="images/big/about-photo.jpg" alt="my photo">
+            </div>
+            <div class="skills-container">
+              <div class="skill">
+                <div class="hexagon">
+                  <p>HTML</p>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="hexagon">
+                  <p>CSS</p>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="hexagon">
+                  <p>JS</p>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="hexagon">
+                  <p>jQuery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-container_text">
+            <p class="padding justify">
+            Hi! My name is Julia and I'm the front-end-web-developer.
+            I have strong background in International Business and Web-Development is the next step in my career.
+            I'm in love with visual arts and technologies.</p>
+            <p class="amatic big">Let's make the Internet beautiful!</p>
+            <p class="playfair padding-small">My portfolio</p>
+            <a href="#portfolio"><i class="material-icons" style="font-size:36px">arrow_downward</i></a>
+          </div>
+        </section>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio" class="margin-bottom col-100">
+        <h2 class="padding center playfair">My portfolio</h2>
+        <div class="portfolio-container">
+          <!-- wide pictures -->
+          <!-- 1st item, wide -->
+          <div class="hovereffect col-50 portfolio-item">
+            <a href="https://codepen.io/Julli/full/WMWxvJ/" target="_blank">
+              <img src="images/big/vudu-furniture.jpg" alt="Mask">
+              <div class="overlay">
+                <p>
+                  <span class="playfair big">VUDU Furniture</span>
+                  <br>
+                  <span class="amatic">local furniture store concept</span>
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 2nd item, wide -->
+          <div class="hovereffect col-50 portfolio-item">
+            <a href="https://usjulija.github.io/simplePages.github.io/" target="_blank">
+              <img src="images/big/simple-colors.jpg" alt="Pensils">
+              <div class="overlay">
+                <p>
+                  <span class="playfair big">My Simple colors</span>
+                  <br>
+                  <span class="amatic">artist's gallery with responsive design</span>
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- small icons -->
+          <!-- 1st item, thin -->
+          <div class="hovereffect col-25 portfolio-item">
+            <a href="https://codepen.io/Julli/full/bLVjVB/" target="_blank">
+              <img src="images/big/ocean.jpg" alt="Ocean">
+              <div class="overlay">
+                <p class="amatic">sound of the ocean</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 2nd item, thin -->
+          <div class="hovereffect col-25 portfolio-item">
+            <a href="https://codepen.io/Julli/full/LeWEZp/" target="_blank">
+              <img src="images/big/magic.jpg" alt="Winter">
+              <div class="overlay">
+                <p class="amatic">web-page about magic</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 3rd item, thin -->
+          <div class="hovereffect col-25 portfolio-item">
+            <a href="https://codepen.io/Julli/full/aEppyM/" target="_blank">
+              <img src="images/big/pixel.jpg" alt="Pixels">
+              <div class="overlay">
+                <p class="amatic">pixel-art maker</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- 4rd item, thin -->
+          <div class="hovereffect col-25 portfolio-item">
+            <a href="another.html" target="_blank">
+              <img src="images/big/next-project-small.jpg" alt="Rocket">
+              <div class="overlay">
+                <p class="amatic">next project will be here</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section -->
+      <section id="contact" class="contact padding col-100">
+        <p class="amatic big center">I can create something amazing for you!</p>
+        <p class="padding-small center">If you want to collaborate, just send me a message</p>
+        <a href="mailto:us.julija@gmail.com?Subject=Contact%20form" target="_top" class="button amatic big padding-small">email me</a>
+      </section>
+    <!-- end of gradient div -->
+    </div>
+  </main>
+  <footer>
+    <div class="footer padding col-100">
+      <p>&copy; 2018, designed by</p>
+      <a href="http://julia-juls.com/" target="_blank">
+        <img src="images/small/logo.svg" alt="logo">
+      </a>
+      <p class="center">icons designed by Agata Kuczminska & Freepic from www.flaticon.com</p>
+    </div>
+  </footer>
+  <!-- JavaScript and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

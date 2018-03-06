@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Playfair+Display+SC);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 25px;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  background: url(images/big/galaxy.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 2%;
+  font-weight: normal;
+}
+
+svg {
+  max-width: 50%;
+  position: absolute;
+  padding: 2%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* animation */
+.tossing{
+	animation-name: tossing;
+	-webkit-animation-name: tossing;
+
+	animation-duration: 2.5s;
+	-webkit-animation-duration: 2.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-1deg);
+	}
+	50% {
+		transform: rotate(1deg);
+	}
+	100% {
+		transform: rotate(-1deg);
+	}
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		-webkit-transform: rotate(-1deg);
+	}
+	50% {
+		-webkit-transform: rotate(1deg);
+	}
+	100% {
+		-webkit-transform: rotate(-1deg);
+	}
+}
+
+/* slide right */
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 2.5s;
+	-webkit-animation-duration: 2.5s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translate(-150%, 60%);
+
+	}
+	50%{
+		transform: translateX(8%, 30%);
+	}
+	65%{
+		transform: translateX(-4%, 10%);
+	}
+	80%{
+		transform: translateX(4%, 0%);
+	}
+	95%{
+		transform: translateX(-2%, -10%);
+	}
+	100% {
+		transform: translateX(0%, -50%);
+	}
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%, 60%);
+	}
+	50%{
+		-webkit-transform: translateX(8%, 30%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%, 10%);
+	}
+	80%{
+		-webkit-transform: translateX(4%, 0%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%, -10%);
+	}
+	100% {
+		-webkit-transform: translateX(0%, -50%);
+	}
+}
+
+@media screen and (min-width: 450px) {
+  svg {
+    max-width: 35%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  svg {
+    max-width: 25%;
+  }
+}
